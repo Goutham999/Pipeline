@@ -11,5 +11,17 @@ pipeline {
           echo 'This is stage 2'
         }
       }
+      parallel{
+      stage('Three'){
+        steps{
+          echo 'THis is stage 3'
+        }
+      }
+      stage('Four'){
+        steps{
+          echo 'This is stage 4'
+        }
+      }
+     }
   }
 }
